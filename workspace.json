@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "event-pattern-examples": "packages/event-pattern-examples"
+  }
+}

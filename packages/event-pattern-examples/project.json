@@ -1,0 +1,43 @@
+{
+  "root": "packages/event-pattern-examples",
+  "sourceRoot": "packages/event-pattern-examples/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/event-pattern-examples",
+        "main": "packages/event-pattern-examples/src/index.ts",
+        "tsConfig": "packages/event-pattern-examples/tsconfig.lib.json",
+        "assets": [
+          "packages/event-pattern-examples/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/event-pattern-examples/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/packages/event-pattern-examples"
+      ],
+      "options": {
+        "jestConfig": "packages/event-pattern-examples/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

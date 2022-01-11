@@ -1,0 +1,25 @@
+.idea/*
+
+**/node_modules/
+.aws*
+build-storybook.log
+.cache-json-tmp/
+
+npm-debug.log
+package-lock.json
+## credentials
+.env*
+.env.production
+**/.DS_Store
+
+.firebase
+
+**/build/**/*
+**/build-fm/**/*
+lerna-debug.log
+
+
+.pnp
+
+# backup files
+**/*.bak
